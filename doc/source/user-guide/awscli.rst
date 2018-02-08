@@ -33,7 +33,7 @@ You can also set specific parameters for the S3 commands:
      	max_queue_size = 100
      	multipart_threshold = 1GB
      	multipart_chunksize = 10MB" >~/.aws/config
-
+     	region = RegionOne
 
 Keystone
 --------
@@ -89,6 +89,13 @@ Usage
 You will need to provide the command line the endpoint of the Swift gateway and disable the SSL verification, as it is not provided by default.
 
 .. note:: Replace *localhost* with the IP of your OpenIO Swift proxy.
+
+Install awscli
+--------------
+
+  .. code-block:: console
+
+    # yum install awscli
 
 Create a bucket
 ---------------
